@@ -1,12 +1,12 @@
 from tkinter import * 
 
 def register():
-	screen1 = Toplevel1(screen)
+	screen1 = Toplevel(screen)
 	screen1.title("Register")
 	screen1.geometry("300x250")
 
-	username = StrinVar()
-	password = StrinVar()
+	username = StringVar()
+	password = StringVar()
 
 	Label(screen1, text = "Username * ").pack()
 	Entry(screen1, textvariable = username)
