@@ -1,12 +1,24 @@
 from tkinter import * 
 
 def register():
-	print("hello")
+	screen1 = Toplevel1(screen)
+	screen1.title("Register")
+	screen1.geometry("300x250")
+
+	username = StrinVar()
+	password = StrinVar()
+
+	Label(screen1, text = "Username * ").pack()
+	Entry(screen1, textvariable = username)
+	Label(screen1, text = "Password * ").pack()
+	Entry(screen1, textvariable = password)
+
 
 def login():
 	print("Login session started")
 
 def main_screen():
+	global screen
 	screen = Tk()
 	screen.geometry("300x250")
 	screen.title("Notes 1.0")
