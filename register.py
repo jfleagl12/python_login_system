@@ -13,7 +13,8 @@ def register_user():
 	password_entry.delete(0, END)
 
 	Label(screen1, text = "Registration Successful!", fg = "green", font = ("Calibri", 11)).pack()
-
+	
+	
 def register():
 	screen1 = Toplevel(screen)
 	screen1.title("Register")
@@ -24,7 +25,7 @@ def register():
 	global username_entry
 	global password_entry
 	global screen1
-	
+
 	username = StringVar()
 	password = StringVar()
 
