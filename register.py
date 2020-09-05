@@ -5,14 +5,14 @@ def register_user():
 	password_info = password.get()
 
 	file = open(username_info + ".txt", "w")
-	file.write(username_info)
+	file.write(username_info+"\n")
 	file.write(password_info)
 	file.close
 
 	username_entry.delete(0, END)
 	password_entry.delete(0, END)
 
-	Label(text = "Registration Successful!")
+	Label(screen1, text = "Registration Successful!", fg = "green", font = ("Calibri", 11)).pack()
 
 def register():
 	screen1 = Toplevel(screen)
@@ -23,7 +23,8 @@ def register():
 	global password 
 	global username_entry
 	global password_entry
-
+	global screen1
+	
 	username = StringVar()
 	password = StringVar()
 
