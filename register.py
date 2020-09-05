@@ -11,9 +11,9 @@ def register():
 	Label(screen1, text = "Please enter details below").pack()
 	Label(screen1, text = "").pack()
 	Label(screen1, text = "Username * ").pack()
-	Entry(screen1, textvariable = username)
+	Entry(screen1, textvariable = username).pack()
 	Label(screen1, text = "Password * ").pack()
-	Entry(screen1, textvariable = password)
+	Entry(screen1, textvariable = password).pack()
 	Label(screen1, text = "").pack()
 	Button(screen1, text = "Register", width = 10, height = 1).pack()
 
